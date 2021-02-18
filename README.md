@@ -27,7 +27,58 @@ Possuir docker instalado, criar um container para o MySQL
 3. ```pip install -r requirements.txt```
 4. ```flask run```
 
+### Executar o migrate
+```python migrate.py db init``` comando é executado somente uma vez, caso não tenha nada na pasta migrations
+```python migrate.py db migrate```
+```python migrate.py db upgrade```
+
 ### Criar variavel de ambiente FLASK_ENV
 ```export FLASK_ENV=development``` para desenvolvimento
 ```export FLASK_ENV=testing``` para teste
 ```export FLASK_ENV=production``` para produção
+
+## Estrutura
+
+```
+├── admin
+│   ├── Admin.py
+│   └── Views.py
+├── app.py
+├── config.py
+├── controller
+│   ├── Email.py
+│   ├── Product.py
+│   └── User.py
+├── migrate.py
+├── migrations
+│   ├── alembic.ini
+│   ├── env.py
+│   ├── __pycache__
+│   │   └── env.cpython-38.pyc
+│   ├── README
+│   ├── script.py.mako
+│   └── versions
+│       ├── 1a00c7b88846_.py
+│       └── __pycache__
+│           └── 1a00c7b88846_.cpython-38.pyc
+├── model
+│   ├── Category.py
+│   ├── Product.py
+│   ├── Role.py
+│   └── User.py
+├── __pycache__
+│   ├── app.cpython-38.pyc
+│   └── config.cpython-38.pyc
+├── README.md
+├── requirements.txt
+├── run.py
+├── static
+│   └── css
+│       ├── home.css
+│       └── login.css
+└── templates
+    ├── home_admin.html
+    ├── login.html
+    ├── new_password.html
+    └── recovery.html
+```
