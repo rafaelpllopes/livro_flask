@@ -21,5 +21,13 @@ def create_app(config_name):
     @app.route('/')
     def index():
         return 'Hello World!'
+
+    @app.route('/login/')
+    def login():
+        return 'Aqui entrará a tela de login'
     
+    @app.route('/recovery-password/')
+    def recovery_password():
+        return 'Aqui entrará a tela de recuperar senha'
+
     return app
