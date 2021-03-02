@@ -28,14 +28,14 @@ Possuir docker instalado, criar um container para o MySQL
 4. ```flask run```
 
 ### Executar o migrate
-```python migrate.py db init``` comando é executado somente uma vez, caso não tenha nada na pasta migrations
-```python migrate.py db migrate```
-```python migrate.py db upgrade```
+- ```python migrate.py db init``` comando é executado somente uma vez, caso não tenha nada na pasta migrations
+- ```python migrate.py db migrate```
+- ```python migrate.py db upgrade```
 
 ### Criar variavel de ambiente FLASK_ENV
-```export FLASK_ENV=development``` para desenvolvimento
-```export FLASK_ENV=testing``` para teste
-```export FLASK_ENV=production``` para produção
+- ```export FLASK_ENV=development``` para desenvolvimento
+- ```export FLASK_ENV=testing``` para teste
+- ```export FLASK_ENV=production``` para produção
 
 ## Estrutura
 
