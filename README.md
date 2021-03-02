@@ -11,15 +11,15 @@ Aplicação em python, feita com base no livro Flask de A a Z.
 ### Banco de dados
 Possuir docker instalado, criar um container para o MySQL
 
-```sudo docker run --name mysqldb -h mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysql -d mysql```
-```sudo docker exec -it mysqldb /bin/bash```
-```mysql -u root -p```
-```CREATE DATABASE livro_flask CHARACTER SET UTF8 collate utf8_general_ci```
+1. ```sudo docker run --name mysqldb -h mysqldb -p 3306:3306 -e MYSQL_ROOT_PASSWORD=mysql -d mysql```
+2. ```sudo docker exec -it mysqldb /bin/bash```
+3. ```mysql -u root -p```
+4. ```CREATE DATABASE livro_flask CHARACTER SET UTF8 collate utf8_general_ci;```
 
 ### Libs
-```sudo apt-get install libmysqlclient-dev```
-```sudo apt-get install gcc```
-```apt-get install python3-pip```
+1. ```sudo apt-get install libmysqlclient-dev```
+2. ```sudo apt-get install gcc```
+3. ```apt-get install python3-pip```
 
 ### Configuração e execução
 1. ```python -m venv .venv```
